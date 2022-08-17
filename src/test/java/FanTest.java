@@ -16,7 +16,7 @@ public class FanTest
 
     /**
      * Create a fan with expected initial values.
-     * @Result Fan with be created with speed 0 and direction right.
+     * @Result Fan with be created with speed 0 and direction clockwise.
      */
     @Test
     public void fanInitWithExpectedValues() {
@@ -26,7 +26,7 @@ public class FanTest
 
     /**
      * Create a fan with expected initial values.
-     * @Result Fan with be created with speed 0 and direction right.
+     * @Result Fan with be created with speed 0 and direction clockwise.
      */
     @Test
     public void fanIncrementWithExpectedValue() {
@@ -61,7 +61,7 @@ public class FanTest
 
     /**
      * Create a fan object that will change direction from right to left.
-     * @Result The fan swaps from its initial value of right to left.
+     * @Result The fan swaps from its initial value of clockwise to counterclockwise.
      */
     @Test
     public void fanChangeDirection() {
