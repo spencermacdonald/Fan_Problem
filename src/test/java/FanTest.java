@@ -21,7 +21,7 @@ public class FanTest
     @Test
     public void fanInitWithExpectedValues() {
         assertEquals(0,fan.getSpeed());
-        assertEquals(Direction.RIGHT, fan.getDirection());
+        assertEquals(Direction.CLOCKWISE, fan.getDirection());
     }
 
     /**
@@ -66,7 +66,7 @@ public class FanTest
     @Test
     public void fanChangeDirection() {
         fan.directionCord();
-        assertEquals(Direction.LEFT, fan.getDirection());
+        assertEquals(Direction.COUNTERCLOCKWISE, fan.getDirection());
     }
 
     /**
@@ -77,7 +77,7 @@ public class FanTest
     public void fanChangeDirectionThenIncreaseSpeed() {
         fan.directionCord();
         fan.speedCord();
-        assertEquals(Direction.LEFT, fan.getDirection());
+        assertEquals(Direction.COUNTERCLOCKWISE, fan.getDirection());
         assertEquals(1, fan.getSpeed());
     }
 }

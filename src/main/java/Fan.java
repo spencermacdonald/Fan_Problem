@@ -1,6 +1,6 @@
 enum Direction {
-    LEFT,
-    RIGHT
+    CLOCKWISE,
+    COUNTERCLOCKWISE
 }
 public class Fan {
     private int speed;
@@ -12,7 +12,7 @@ public class Fan {
      */
     public Fan() {
         this.speed = 0;
-        this.direction = Direction.RIGHT;
+        this.direction = Direction.CLOCKWISE;
     }
 
     /**
@@ -26,10 +26,10 @@ public class Fan {
      * inverses the current direction of the fan.
      */
     public void directionCord() {
-        if (this.direction == Direction.RIGHT) {
-            this.direction = Direction.LEFT;
+        if (this.direction == Direction.CLOCKWISE) {
+            this.direction = Direction.COUNTERCLOCKWISE;
         } else {
-            this.direction = Direction.RIGHT;
+            this.direction = Direction.CLOCKWISE;
         }
     }
 
@@ -42,7 +42,7 @@ public class Fan {
 
     /**
      * @return Current direction of the fan.
-     * (Direction.LEFT = left , Direction.RIGHT = right).
+     * (Direction.CLOCKWISE = Clockwise , Direction.COUNTERCLOCKWISE = Counterclockwise).
      */
     public Direction getDirection() {
         return this.direction;
