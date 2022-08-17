@@ -16,7 +16,7 @@ public class Fan {
     }
 
     /**
-     * increases the speed of the fan based on current direction.
+     * increases the speed of the fan up to Max Speed.
      */
     public void speedCord() {
         this.speed = (this.speed+1)%(MAX_SPEED+1);
